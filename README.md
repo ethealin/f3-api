@@ -1,6 +1,6 @@
 # API Documention
 
-# Endpoints
+## Endpoints
 ```
 GET /v1/dogs
 ```
@@ -20,3 +20,6 @@ PUT /v1/dogs/@id
 ```
 DELETE /v1/dogs/@id
 ```
+
+## Utiliser Git
+[http://rogerdudler.github.io/git-guide/index.fr.html](http://rogerdudler.github.io/git-guide/index.fr.html)
