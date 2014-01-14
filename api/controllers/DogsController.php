@@ -25,8 +25,16 @@ class DogsController{
 	}
 
 	public function actionUpdate(){
-		$data = array('Update dog with name: ' . F3::get('PARAMS.id'));
-		Api::response(200, $data);
+
+		$data = Put::get();
+
+		if(isset($data['name'])){
+			$data = array('Update dog with name: ' . F3::get('PARAMS.id') . ' with name: '. $data['name']);
+			Api::response(200, $data);
+		}
+		else{
+			Api::response(400, array('error'=>'Name is missing'));
+		}
 	}
 
 	public function actionDelete(){
